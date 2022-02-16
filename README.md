@@ -21,7 +21,8 @@ python3 mavlink_utm_sim.py -i /path/to/file.csv -o udpout:localhost:14550
 
 The CSV must contain these colums:
 ```csv
-TODO
+uas_id, lat, lon, alt, relative_alt, vx, vy, vz, h_acc, v_acc, vel_acc
 ```
 
 Data is in standard units (meters, degrees, m/s) and is converted to the fixed point version internally.
+The `flight_state` is fixed to `UTM_FLIGHT_STATE_AIRBORNE`, data availablility flags are set to match the required CSV columns.
