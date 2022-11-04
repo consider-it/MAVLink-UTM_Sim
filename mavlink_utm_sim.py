@@ -6,6 +6,7 @@ Generate MAVLink UTM_GLOBAL_POSITION messages from CSV file.
 
 Author:    Jannik Beyerstedt <beyerstedt@consider-it.de>
 Copyright: (c) consider it GmbH, 2022
+License:   MIT
 """
 
 import argparse
