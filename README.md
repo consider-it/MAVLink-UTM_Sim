@@ -7,7 +7,7 @@ Clone this repository and install the python dependencies with `pip3 install -r 
 
 
 ## Usage
-This utilit generates UTM_GLOBAL_POSITION by replaying a CSV file with the required data fields in a loop.
+This utility generates UTM_GLOBAL_POSITION by replaying a CSV file with the required data fields in a loop.
 
 The output connection strings are according to the PyMavlink library, e.g.:
 - `udpin:$ip:$port`: Listening for UDP packets on the specified IP (normally 0.0.0.0) and port

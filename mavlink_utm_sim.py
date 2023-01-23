@@ -28,7 +28,7 @@ if __name__ == "__main__":
     logging.basicConfig(format=log_format, datefmt=log_datefmt, level=logging.INFO)
     logger = logging.getLogger()
 
-    parser = argparse.ArgumentParser(description='MAVLink GNSS Status Display')
+    parser = argparse.ArgumentParser(description='MAVLink UTM_GLOBAL_POSITION Generator')
     parser.add_argument("-i", "--input", required=True,
                         help="CSV file path")
     parser.add_argument("-o", "--output", required=True,
