@@ -1,5 +1,5 @@
-# MAVLink UTM_GLOBAL_POSITION Simulator
-Generate MAVLink [UTM_GLOBAL_POSITION](https://mavlink.io/en/messages/common.html#UTM_GLOBAL_POSITION) messages from a CSV with the corresponding data.
+# MAVLink UTM_GLOBAL_POSITION/ GLOBAL_POSITION_INT Simulator
+Generate MAVLink [UTM_GLOBAL_POSITION](https://mavlink.io/en/messages/common.html#UTM_GLOBAL_POSITION) or [GLOBAL_POSITION_INT](https://mavlink.io/en/messages/common.html#GLOBAL_POSITION_INT) messages from a CSV with the corresponding data.
 
 
 ## Installation
@@ -7,7 +7,8 @@ Clone this repository and install the python dependencies with `pip3 install -r 
 
 
 ## Usage
-This utility generates UTM_GLOBAL_POSITION by replaying a CSV file with the required data fields in a loop.
+This utility generates UTM_GLOBAL_POSITION and GLOBAL_POSITION_INT by replaying a CSV file with the required data fields in a loop.
+The GLOBAL_POSITION_INT messages will be sent with 4 Hz (repeating the data four times) while UTM_GLOBAL_POSITION is limited to 1 Hz.
 
 The output connection strings are according to the PyMavlink library, e.g.:
 - `udpin:$ip:$port`: Listening for UDP packets on the specified IP (normally 0.0.0.0) and port
